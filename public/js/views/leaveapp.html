@@ -1,0 +1,208 @@
+<!--
+Copyright (c) 2014, 2017, Oracle and/or its affiliates.
+The Universal Permissive License (UPL), Version 1.0
+-->
+<div id="LeaveApp">
+	<div class="Top_area">
+		<div class="head_txt"><span>Leave</span> Application</div>
+	</div>
+	<div class="tab_area">
+		<oj-tab-bar drill-mode="none" selection="home2" edge="top" class="oj-tabbar-stack-icon-label">
+		<ul>
+			<li id="ApplyLeaveBtn" data-bind="click: appLeave">
+				<a href="#">
+					<span class="top_img"><img src="css/images/apply_leave.png"></span>
+					Apply Leave
+				</a>
+			</li>
+			<li id="sikval">
+				<a href="#">
+					<span class="sickval">
+						5
+					</span>
+					Sick Leave
+				</a>
+			</li>
+			<li id="vactleave">
+				<a href="#">
+					<span class="sickval">
+						10
+					</span>
+					Vacation Leave
+				</a>
+			</li>
+			<li id="compOff">
+				<a href="#">
+					<span class="sickval">
+						0
+					</span>
+					Comp Off Leave
+				</a>
+			</li>
+			<li id="LeaveReyHist" data-bind="click: showHist">
+				<a href="#" >
+					<span class="top_img"><img src="css/images/leave_history.png"></span>
+					Leave Request history
+				</a>
+			</li>
+			<li  id="btnGo"
+            data-bind="click: function()
+                       {
+                         var popup = document.querySelector('#popup1');
+                         popup.open('#btnGo');
+                       }">
+				<a href="#" >
+					<span class="top_img"><img src="css/images/holiday_calender.png"></span>
+					History Calender
+				</a>
+			</li>
+		</ul>
+		</oj-tab-bar>
+	</div>
+	<div class="change_area">
+		<!-- starting of the first block -->
+		<div id="leaveapply" class="change_style" >
+			<div class="toparea">Apply Leave Form</div>
+			<div class="leaveForm">
+				<div class="form_left">
+					<div class="form_div">
+						<oj-label show-required for="basicSelect">Leave Type</oj-label>
+						<oj-select-one id="basicSelect" value="{{vacationType}}" >
+						<oj-option value="">Select</oj-option>
+						<oj-option value="VAC">Vacation</oj-option>
+						<oj-option value="SIC">Sick</oj-option>
+						<oj-option value="CAS">Casual</oj-option>
+						</oj-select-one>
+					</div>
+					<div class="form_div">
+						<oj-label for="control1" show-required>Duration</oj-label>
+						<oj-input-text id="control1" required value="{{duration}}"></oj-input-text><span class="durcal">Calculate Duration</span>
+					</div>
+					<div class="form_div">
+						<oj-label for="control1" show-required>Comments	</oj-label>
+						<oj-text-area id="text-area" value="{{comments}}">
+						</oj-text-area>
+					</div>
+					<div class="form_div">
+						<oj-button id='' class="submit_btn" id="buttonOpener"
+						data-bind="click: submitLeave">Submit</oj-button>  <oj-button id='' class="savelater" on-click=''>Save for Later</oj-button>
+					</div>
+				</div>
+				<div class="form_right">
+					<div class="form_div"> <oj-label for="control1" show-required>Start Date</oj-label> 
+                                            <oj-input-date id="date" value="{{leaveStartDt}}"></oj-input-date> 
+                                            <oj-label for="control1" show-required>End Date</oj-label> 
+                                            <oj-input-date id="date" value="{{leaveEndDt}}"></oj-input-date>
+                                        </div>
+					<div class="form_div">
+						<oj-label show-required for="basicSelect">Leave Method</oj-label>
+						<oj-select-one id="basicSelect" value="{{fullDayInd}}" >
+						<oj-option value="">Select</oj-option>
+						<oj-option value="N">Full Day</oj-option>
+						<oj-option value="Y">Half Day</oj-option>
+						</oj-select-one>
+					</div>
+					<div class="form_div">
+						<oj-label for="control1" show-required>Duration</oj-label>
+						<input type="file"></input>
+					</div>
+                                </div><br>
+                            <div><span data-bind="text: responseMsg" style="font-weight: bold;"></span></div>
+			</div>
+		</div>
+		<!-- Ending of the first block -->
+		<!-- starting of the second block -->
+
+
+		<div id="requesthist" class="change_style" style="display:none;">
+			<div class="toparea">Leave Request History</div>
+			<div class="histtable">
+				<oj-table id='table' aria-label='Leave History Table'
+                                        data='[[dataprovider]]' 
+                                        columns-default.sortable='disabled' 
+                                        columns='[{"headerText": "Leave Type", 
+                                                   "field": "leavetype"},
+                                                  {"headerText": "Start Date", 
+                                                   "field": "startdate"},
+                                                  {"headerText": "End Date", 
+                                                   "field": "enddate"},
+                                                  {"headerText": "Duration", 
+                                                   "field": "duration"},
+                                                   {"headerText": "Status", 
+                                                   "field": "status"},
+                                                   {"headerText": "Attachments", 
+                                                   "field": "attach"},
+                                                   {"headerText": "Requested By", 
+                                                   "field": "requested"},
+                                                   {"headerText": "Comments", 
+                                                   "field": "comment"},
+                                                   {"headerText": "", 
+                                                   "field": "action"}]'>
+        </oj-table>
+
+			</div>
+		</div>
+
+		<!-- ENDing of the second block -->
+
+
+
+
+	</div>
+	<div id="dialogWrapper">
+		<oj-dialog style="display:none" id="modalDialog1" >
+		<div slot="body">
+			<div class="pophead">Alert</div>
+			<div class="poptext">
+				Dear Employee,
+				Apply from 23rd Dec 2017, there is upcoming holiday on 25th Dec, so that you can save your 2days leaves
+			</div>
+		</div>
+		<div slot="footer">
+			<oj-button id="okButton" class="dialogClose" data-bind="click: function() {
+			document.querySelector('#modalDialog1').close();
+			}">  Close
+			</oj-button>
+		</div>
+		</oj-dialog>
+		
+	</div>
+	<!-- starting of the popup -->
+
+	    <div id="popupWrapper">
+	    	  <oj-popup style="display:none" id="popup1" class="Holiday_cal_pop">
+               <div class="demo-popup-body ">
+                <div class="holidcal_top">Holiday Calender 2017</div>
+                <div class="demo-popup-content">
+               	 <oj-table id='table' aria-label='Holiday Calender Table'
+                                        data='[[holidaycalprovider]]' 
+                                        columns-default.sortable='disabled' 
+                                        columns='[{"headerText": "DESCRIPTION", 
+                                                   "field": "Description"},
+                                                  {"headerText": "MONTH", 
+                                                   "field": "month"},
+                                                  {"headerText": "DATE", 
+                                                   "field": "date"},
+                                                  {"headerText": "DAY", 
+                                                   "field": "day"}, 
+                                                  {"headerText": "PROVINCE", 
+                                                   "field": "province"}]'>
+        </oj-table>
+                
+                </div>
+                <div class="demo-popup-footer">
+                   <span class="dwonload_btm">Download</span><span class="close_btm" id="btnCancel" 
+                       data-bind="click: function()
+                                  {
+                                    var popup = document.querySelector('#popup1');
+                                    popup.close();
+                                  }">Close</span>
+                </div>
+              </div>
+          </oj-popup>
+       
+        </div>
+
+	<!-- Ending of popup -->
+
+</div>

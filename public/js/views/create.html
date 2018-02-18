@@ -1,0 +1,160 @@
+<!--
+Copyright (c) 2014, 2017, Oracle and/or its affiliates.
+The Universal Permissive License (UPL), Version 1.0
+-->
+<div id="Create">
+  <div class="Top_area">
+    <div class="head_txt"><span>Time Report</span> Summary</div>
+    <div class="emp_drop"><span> <oj-combobox-one id="combobox" value="Export">
+      <oj-option value="Export">Export</oj-option>
+      <oj-option value="first">first</oj-option>
+    </oj-combobox-one></span></div>
+    <div class="startdate_drop">period Start Date <span><oj-input-date id="date" value='{{dateval}}'>
+    </oj-input-date></span> </div>
+    
+  </div>
+  <div class="Stat_area">
+    <div class="first_block">
+      <p class="top_ht">Timesheet Statistics</p>
+      <oj-status-meter-gauge
+      id="rogauge"
+      min="0"
+      max="100"
+      value="{{projval}}"
+      orientation="circular"
+      metric-label="[[customMetricLabel]]"
+      svg-style="[[customSvgStyle]]"
+      readonly
+      style="align:center;margin-top:3px;margin-bottom:3px;height:100px;width:100%;">
+      </oj-status-meter-gauge>
+      <p class="btm_ht">10% Due</p>
+      <p class="btm_nt">for this week</p>
+    </div>
+    <div class="sec_block">
+      <p class="top_ht">How did you find work this week?</p>
+      <div class="emotion_icons">
+        <span><img src="css/images/not_great.png">
+          <p>Not Good</p>
+        </span>
+         <span><img src="css/images/good.png">
+          <p>Good</p></span>
+          <span><img src="css/images/great.png">
+            <p>Great!</p></span>
+      </div>
+    </div>
+    <div class="third_block">
+      <p class="top_ht">Timesheets</p>
+      <div class="times_head">13 Nov - 17 Nov 2017</div>
+      <div class="time_record">
+        <div><p class="green">5</p><p>Approved</p></div>
+        <div><p class="black">3</p><p>Submitted</p></div>
+        <div><p class="red">1</p><p>Rejected</p></div>
+      </div>
+       <div class="show_pre">Show  previous week</div>
+    </div>
+    
+  </div>
+  <div class="create_table">
+    
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 19%">Client - Project - Task</th>
+          <th style="width: 20%">Engagement/Lead/Opportunity</th>
+          <th style="width: 10%">Account</th>
+          <th style="width: 37.8%"><span>S </span> <span>M</span> <span>T</span> <span>W</span> <span>T</span> <span>F</span> <span>S</span></th>
+          <th style="width: 15%">Comments</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="width: 20%">
+            <div class="round_color green">I</div>
+            <div class="other_txt">
+              <span class="comp_name">IBM</span>
+              <span class="task">Org Chart - <i>Testing</i></span>
+              <span class="date">13-11-2017</span>
+            </Div>
+          </td>
+          <td style="width: 20%">
+            <div>
+              <select>
+                <option>(Off) [1000186709] Assistance</option>
+              </select>
+            </div>
+            
+          </td>
+          <td style="width: 10%">
+            <div>
+              <select>
+                <option>Non-Billable</option>
+              </select>
+            </div>
+            
+          </td>
+          <td style="width: 40%">
+            <span class="box1"></span>
+            <span class="box2">2.5</span>
+            <span class="box2">3</span>
+            <span class="box2">1</span>
+            <span class="box2">1</span>
+            <span class="box2">1</span>
+            <span class="box1"></span>
+          </td>
+          <td style="width: 15%">
+            <textarea></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td style="width: 20%">
+            <div class="round_color green">I</div>
+            <div class="other_txt">
+              <span class="comp_name">IBM</span>
+              <span class="task">Org Chart - <i>Testing</i></span>
+              <span class="date">13-11-2017</span>
+            </Div>
+          </td>
+          <td style="width: 20%">
+            <div>
+              <select>
+                <option>(Off) [1000186709] Assistance</option>
+              </select>
+            </div>
+            
+          </td>
+          <td style="width: 10%">
+            <div>
+              <select>
+                <option>Non-Billable</option>
+              </select>
+            </div>
+            
+          </td>
+          <td style="width: 40%">
+            <span class="box1"></span>
+            <span class="box2">2.5</span>
+            <span class="box2">3</span>
+            <span class="box2">1</span>
+            <span class="box2">1</span>
+            <span class="box2">1</span>
+            <span class="box1"></span>
+          </td>
+          <td style="width: 15%">
+            <textarea></textarea>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="sticky_footer">
+    <div class="left">
+        <oj-button class="orange"> Add Project </oj-button>
+         <oj-button  class="green"> Submit </oj-button>
+          <oj-button  class="orange"> Save </oj-button>
+           <oj-button  class="orange"> Delete</oj-button>
+            <oj-button  class="grey"> Cancel </oj-button>
+    </div>
+    <div class="right">Opportunity Total Time <span>42.00 Hrs</span></div>
+  </div>
+</div>

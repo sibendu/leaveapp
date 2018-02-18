@@ -1,0 +1,899 @@
+/*
+    Document   : override
+    Created on : <date>
+    Author     : <author>
+    Description:
+        This is where any of your application specific styles should be included
+*/
+.oj-web-applayout-max-width {
+	max-width: 100%;
+}
+
+.oj-web-applayout-header > div {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.oj-web-applayout-header > div:first-child {
+	background: url(images/bg.jpg);
+	padding: 10px 10%;
+	background-size: cover;
+}
+
+.oj-web-applayout-header {
+	background-color: #fff;
+}
+
+.oj-web-applayout-navbar {
+	padding-top: 40px;
+}
+
+.oj-navigationlist-element {
+	float: left;
+}
+
+.oj-navigationlist-app-level.oj-navigationlist-horizontal .oj-navigationlist-item.oj-selected a.oj-navigationlist-item-content > .oj-navigationlist-item-label {
+	color: #359dc2;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.oj-navigationlist-item.oj-selected {
+	border-color: #4197ae;
+}
+
+.oj-navigationlist-app-level.oj-navigationlist-horizontal .oj-navigationlist-item-label {
+	font-size: 16px;
+}
+
+.oj-web-applayout-content {
+	background-color: #f7f7f7;
+}
+
+.timeSheet {
+	width: 100%;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.cognizant_logo {
+	width: auto;
+	height: auto;
+	width: 60%;
+	text-align: left;
+}
+
+.search {
+	float: left;
+	padding: 0 10px;
+	width: 25%;
+}
+
+.help_icon {
+	float: left;
+	padding: 0 10px;
+}
+
+.notif_icon {
+	float: left;
+	padding: 0 10px;
+}
+
+.prof_icon {
+	    text-align: right;
+    padding-left: 28px;
+}
+.prof_icon img {
+	width: 80%;
+}
+.search .oj-inputtext {
+	margin-top: -30px;
+}
+
+.search input {
+	height: 40px;
+	border-radius: 20px;
+	border-color: #59e7e8;
+	background-color: transparent;
+	border-width: 3px;
+	color: #59e7e8;
+	padding: 10px;
+}
+
+#timeSheet {
+	width: 80%;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+#timeSheet .Top_area {
+	width: 100%;
+	margin: 15px 0px;
+}
+
+#timeSheet .Top_area .head_txt {
+	float: left;
+	font-size: 20px;
+	color: #000;
+	width: 25%;
+}
+
+#timeSheet .Top_area .head_txt span {
+	font-weight: bold;
+}
+
+#timeSheet .Top_area .emp_drop {
+	float: left;
+	color: #787878;
+	font-size: 16px;
+	font-weight: bold;
+	display: block;
+	width: 25%;
+}
+
+.emp_drop .oj-combobox-choice {
+	border-radius: 5px;
+}
+
+.emp_drop  .oj-combobox {
+	max-width: 180px;
+}
+
+#timeSheet .Top_area .emp_drop span {
+}
+
+#timeSheet .Top_area .startdate_drop {
+	float: left;
+	color: #787878;
+	font-size: 16px;
+	font-weight: bold;
+	width: 35%;
+}
+
+#timeSheet .Top_area .startdate_drop .oj-inputdatetime-date-only {
+	width: 50%;
+}
+
+#timeSheet .Top_area .startdate_drop  input {
+	border-radius: 5px;
+}
+
+#timeSheet .Top_area .create_btn {
+	float: right;
+	width: 15%;
+	text-align: right;
+}
+
+#timeSheet .Top_area .oj-button {
+	width: 80%;
+	height: 35px;
+}
+
+#timeSheet .Top_area button {
+	background-color: #1bb6ee;
+	background-image: linear-gradient(to bottom, #1bb6ee 0%, #1bb6ee 3.64%, #1bb6ee 50%, #1bb6ee 100%);
+	border-radius: 5px;
+	    cursor: pointer;
+}
+
+#timeSheet .Top_area button .oj-button-text {
+	color: #fff;
+}
+
+#timeSheet .Stat_area {
+	width: 98%;
+	background-color: #fff;
+	padding: 10px;
+	float: left;
+	margin: 20px 0px;
+	border-radius: 5px;
+	border-color: #cacaca;
+	border-width: 1px;
+	border-style: solid;
+}
+
+#timeSheet .Stat_area .first_block {
+	float: left;
+	width: 20%;
+}
+
+#timeSheet .Stat_area .sec_block {
+	float: left;
+	width: 20%;
+}
+
+#timeSheet .Stat_area .third_block {
+	float: left;
+	width: 20%;
+}
+
+#timeSheet .Stat_area .fourth_block {
+	float: left;
+	width: 40%;
+}
+
+.Stat_area  p {
+	margin: 0px;
+}
+
+.Stat_area .top_ht {
+	text-align: center;
+	color: #2ea1c0;
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+
+.Stat_area .btm_ht {
+	text-align: center;
+	color: #000;
+	font-weight: bold;
+}
+
+.Stat_area .btm_nt {
+	text-align: center;
+	color: #000;
+}
+
+#timeSheet .table_area {
+	width: 100%;
+	float: left;
+}
+
+#timeSheet .table_area  .oj-table-header {
+	background-color: #fff;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	border-color: #cacaca;
+	border-width: 1px;
+	border-style: solid;
+	width: 100%;
+	float: left;
+}
+
+#timeSheet .table_area .oj-table-header tr {
+	width: 100%;
+}
+
+#timeSheet .table_area .oj-table-body {
+	background-color: #fff;
+	padding: 10px 0px;
+	border-radius: 5px;
+	border-color: #cacaca;
+	border-width: 1px;
+	border-style: solid;
+	float: left;
+	width: 100%;
+}
+
+#timeSheet .table_area .oj-table-body tr {
+	width: 100%;
+}
+
+table.oj-table-element {
+	width: 100%;
+}
+
+#table {
+	overflow: inherit !important;
+}
+
+#timeSheet .table_area .oj-table-header th {
+	width: 5%;
+	color: #70d8f3;
+	font-weight: bold;
+	border-right: 1px solid #eee;
+}
+
+#timeSheet .oj-table-data-cell {
+	width: 5%;
+}
+
+#Create {
+	width: 80%;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+#Create .Top_area {
+	width: 100%;
+	margin: 15px 0px;
+}
+
+#Create .Top_area .head_txt {
+	float: left;
+	font-size: 20px;
+	color: #000;
+	width: 50%;
+}
+
+#Create .Top_area .head_txt span {
+	font-weight: bold;
+}
+
+#Create .Top_area .emp_drop {
+	float: left;
+	color: #787878;
+	font-size: 16px;
+	font-weight: bold;
+	display: block;
+	width: 15%;
+}
+
+#Create .Top_area .emp_drop span {
+}
+
+#Create .Top_area .startdate_drop {
+	float: right;
+	color: #787878;
+	font-size: 16px;
+	font-weight: bold;
+	width: 25%;
+}
+
+#Create .Top_area .startdate_drop .oj-inputdatetime-date-only {
+	width: 50%;
+}
+
+#Create .Top_area .startdate_drop  input {
+	border-radius: 5px;
+}
+
+#Create .Top_area .create_btn {
+	float: right;
+	width: 15%;
+	text-align: right;
+}
+
+#Create .Top_area .oj-button {
+	width: 80%;
+	height: 35px;
+}
+
+#Create .Top_area button {
+	background-color: #1bb6ee;
+	background-image: linear-gradient(to bottom, #1bb6ee 0%, #1bb6ee 3.64%, #1bb6ee 50%, #1bb6ee 100%);
+	border-radius: 5px;
+}
+
+#Create .Top_area button .oj-button-text {
+	color: #fff;
+}
+
+#Create .Stat_area {
+	width: 98%;
+	background-color: #fff;
+	padding: 10px;
+	float: left;
+	margin: 20px 0px;
+	border-radius: 5px;
+	border-color: #cacaca;
+	border-width: 1px;
+	border-style: solid;
+}
+
+#Create .Stat_area .first_block {
+	float: left;
+	width: 20%;
+	border-right: 1px solid #eee;
+}
+
+#Create .Stat_area .sec_block {
+	float: left;
+	width: 39%;
+	border-right: 1px solid #eee;
+}
+
+#Create .Stat_area .third_block {
+	float: left;
+	width: 39%;
+}
+
+.oj-table-data-cell-acc-select, .oj-table-column-header-acc-select-row {
+	display: none;
+}
+
+.oj-table-column-header-text {
+	width: 100%;
+}
+
+#LeaveApp {
+	width: 80%;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+#LeaveApp .Top_area {
+	width: 100%;
+	margin: 15px 0px;
+}
+
+#LeaveApp .Top_area .head_txt {
+	float: left;
+	font-size: 20px;
+	color: #000;
+	width: 100%;
+}
+
+#LeaveApp .Top_area .head_txt span {
+	font-weight: bold;
+}
+
+#LeaveApp .tab_area {
+	width: 100%;
+	float: left;
+	margin-top: 20px;
+	background-color: #fff;
+	border-radius: 5px;
+}
+
+#LeaveApp .tab_area .sickval {
+	width: 100%;
+	display: block;
+	text-align: center;
+}
+
+#LeaveApp .change_area {
+	float: left;
+	width: 100%;
+	margin-top: 20px;
+}
+
+#LeaveApp  .change_style {
+	background-color: #fff;
+	border: 1px solid #eee;
+	float: left;
+	width: 100%;
+}
+
+#LeaveApp  .toparea {
+	padding-left: 10px;
+	background-color: #fff;
+	border-radius: 5px;
+	background-color: #ecf6f8;
+	padding: 10px 10px;
+	border: 1px solid #eee;
+	color: #10abc1;
+	font-size: 18px;
+}
+
+.leaveForm {
+	width: 100%;
+	float: left;
+	padding: 10px;
+}
+
+.leaveForm .form_left {
+	float: left;
+	width: 50%;
+}
+
+.leaveForm .form_right {
+	float: left;
+	width: 50%;
+}
+
+.leaveForm  .oj-label {
+	display: inline-block;
+	padding-right: 10px;
+	width: 20%;
+	float: left;
+	font-size: 14px;
+}
+
+.leaveForm  .oj-label {
+	width: 15%;
+}
+
+.leaveForm  .oj-select, .leaveForm  .oj-textarea {
+	max-width: 75% !important;
+	width: 75% !important;
+}
+
+.leaveForm .oj-inputdatetime {
+	max-width: 28% !important;
+	width: 28% !important;
+	float: left;
+	padding-right: 5px;
+}
+
+.leaveForm  .oj-select-choice {
+	border-radius: 5px;
+}
+
+.leaveForm .form_div {
+	float: left;
+	width: 100%;
+	margin: 5px 0px;
+}
+
+.leaveForm .durcal {
+	color: #10abc1;
+	font-size: 14px;
+	margin-left: 10px;
+	text-decoration: underline;
+}
+
+.leaveForm .submit_btn button {
+	background-color: #ee8c05 !important;
+	background-image: linear-gradient(to bottom, #ee8c05 0%, #ee8c05 3.64%, #ee8c05 50%, #ee8c05 100%) !important;
+	color: #fff !important;
+	border: none;
+	border-radius: 6px;
+	height: 30px;
+}
+
+.leaveForm .savelater button {
+	background-color: #989898 !important;
+	background-image: linear-gradient(to bottom, #989898 0%, #989898 3.64%, #989898 50%, #989898 100%) !important;
+	color: #fff !important;
+	border: none;
+	border-radius: 6px;
+	height: 30px;
+}
+
+.pophead {
+	background-color: #02aee6;
+	font-size: 26px;
+	text-align: center;
+	width: 100%;
+	color: #fff;
+	padding: 10px 0px;
+}
+
+.poptext {
+	padding: 20px 30px;
+	font-size: 18px;
+	text-align: center;
+}
+
+.oj-dialog-header {
+	display: none;
+}
+
+.dialogClose {
+	margin-left: 0px !important;
+	margin-bottom: 0px;
+	width: 100%;
+	border-top: 1px solid #aaa;
+}
+
+.dialogClose button {
+	width: 100%;
+	text-align: center;
+	background-color: #fff !important;
+	color: #000;
+	border-color: none;
+	border: none;
+	background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 3.64%, #ffffff 50%, #ffffff 100%) !important;
+}
+
+.oj-dialog-footer, .oj-dialog-body {
+	padding: 0px;
+}
+
+#requesthist #table {
+	width: 100%;
+}
+
+#requesthist #table th {
+	font-weight: bold;
+}
+
+.demo-popup {
+	width: 40vw;
+	height: 40vh;
+	display: none;
+}
+
+.demo-popup-body {
+	width: 35vw;
+	height: 35vh;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+}
+
+.demo-popup-header {
+	align-self: flex-start;
+	margin-bottom: 10px;
+}
+
+.demo-popup-content {
+	align-self: stretch;
+	overflow: auto;
+	flex-basis: 40vh;
+}
+
+.demo-popup-footer {
+	align-self: flex-end;
+	margin-top: 10px;
+}
+
+.oj-popup-content {
+	padding: 0px;
+	border-radius: 5px;
+}
+
+.Holiday_cal_pop {
+	border-radius: 5px;
+}
+
+.Holiday_cal_pop .holidcal_top {
+	background-color: #01aee8;
+	float: left;
+	height: 50px;
+	padding: 10px 10px;
+	font-weight: bold;
+	color: #fff;
+	font-size: 16px;
+}
+
+.Holiday_cal_pop #table {
+	width: 99%;
+	margin-top: 10px;
+}
+
+.Holiday_cal_pop #table th {
+	font-weight: bold;
+}
+
+.Holiday_cal_pop .demo-popup-footer {
+	padding: 5px 10px;
+	width: 95%;
+}
+
+.Holiday_cal_pop .demo-popup-footer .dwonload_btm {
+	text-align: left;
+	float: left;
+	color: #01aee8;
+	font-weight: bold;
+}
+
+.Holiday_cal_pop .demo-popup-footer .close_btm {
+	text-align: right;
+	color: #666;
+	float: right;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.create_table {
+	width: 100%;
+	float: left;
+	    margin-bottom: 20px;
+}
+
+.create_table table {
+	width: 100%;
+	float: left;
+}
+
+.create_table thead {
+	width: 100%;
+	background-color: #fff;
+	border-radius: 5px;
+	float: left;
+}
+
+.create_table thead tr, .create_table tbody tr {
+	width: 100%;
+	float: left;
+	display: table;
+}
+
+.create_table thead th {
+	padding: 20px 10px;
+	border-right: 1px solid #eee;
+	color: #01aee8;
+	text-align: left;
+}
+
+.create_table thead th span {
+	width: 12%;
+	float: left;
+}
+
+.create_table tbody {
+	width: 100%;
+	background-color: #fff;
+	border-radius: 5px;
+	margin-top: 5px;
+	float: left;
+}
+
+.create_table tbody tr {
+	width: 100%;
+	border-bottom: 1px solid #eee;
+}
+
+.create_table tbody tr td {
+	padding: 20px 10px;
+	border-right: 1px solid #eee;
+	text-align: left;
+}
+
+.create_table tbody tr td .round_color {
+	border-radius: 50%;
+	color: #fff;
+	float: left;
+	margin-right: 5px;
+	padding: 8px 15px;
+	display: block;
+}
+
+.create_table tbody tr td .other_txt {
+	float: left;
+	display: block;
+}
+
+.green {
+	background-color: #29d485;
+}
+
+.create_table tbody tr td .comp_name {
+	display: block;
+	color: #777;
+}
+
+.create_table tbody tr td .task {
+	display: block;
+	color: #777;
+}
+
+.create_table tbody tr td .task>i {
+	color: #333;
+	font-weight: bold;
+	font-style: normal;
+}
+
+.create_table tbody tr td .date {
+	display: block;
+	color: #999;
+}
+
+.create_table tbody tr td select {
+	border: none;
+}
+
+.create_table tbody tr td select option {
+	font-weight: bold;
+}
+
+.create_table tbody tr td  .box1 {
+	border: 1px solid #666;
+	padding: 13px 20px;
+	margin: 0px 3px;
+	width: 40px;
+	height: 40px;
+}
+
+.create_table tbody tr td  .box2 {
+	background-color: #f3f3f3;
+	padding: 15px;
+	margin: 0px 3px;
+	color: #333;
+	font-weight: bold;
+}
+
+.sticky_footer {
+	position: fixed;
+	bottom: 0px;
+	margin-top: 20px;
+	padding: 20px;
+	width: 80%;
+	left: 0px;
+	padding-left: 10%;
+	padding-right: 10%;
+	background-color: #fff;
+}
+.sticky_footer .left {
+	float: left;
+}
+.sticky_footer .right {
+	float: right;
+	color:  #01aee8;
+	font-size: 18px;
+	font-weight: bold;
+}
+.sticky_footer .right span{
+	color:  #333;
+	font-size: 20px;
+	font-weight: bold;
+}
+.sticky_footer  .oj-button {
+	border:none;
+}
+.sticky_footer .oj-button-jqui.oj-default.oj-button-full-chrome, .oj-button-jqui.oj-focus-only.oj-button-full-chrome, .oj-button.oj-default.oj-button-full-chrome .oj-button-button, .oj-button.oj-focus-only.oj-button-full-chrome .oj-button-button{
+	background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 3.64%, #ffffff 50%, #ffffff 100%);
+	border-color: transparent;
+}
+
+.sticky_footer .oj-button-label {
+	color: #fff;
+	border-radius: 5px;
+}
+.sticky_footer .orange .oj-button-label {
+	
+	background-color: #ef8b00;
+}
+.sticky_footer .grey .oj-button-label {
+	
+	background-color: #989898;
+}
+.sticky_footer .green .oj-button-label {
+
+	background-color: #7bd31f;
+}
+.emotion_icons {
+	    width: 100%;
+    margin-top: 20px;
+    display: inline-block;
+    text-align: center;
+}
+.emotion_icons span {
+	float: left;
+	width: 33%;
+	display: inline-block;
+}
+#userMenu .oj-button-label {
+	color: #fff;
+	font-size: 16px;
+}
+.times_head {
+	background-color: #eee;
+	text-align: center;
+	font-weight: bold;
+	padding: 5px 0px;
+}
+.time_record {
+	width: 100%;
+	float: left;
+	border-bottom: 1px solid #eee;
+}
+.time_record div {
+	width: 33%;
+	float: left;
+	text-align: center;
+	padding: 20px 0px;
+	border-right: 1px solid #eee;
+}
+.show_pre {
+	width: 100%;
+	text-align: center;
+	margin-top: 10px;
+	display: inline-block;
+}
+.time_record .green{
+color: #7bd31f;
+font-weight: bold;
+background-color: transparent;
+}
+.time_record .black{
+color: #333;
+font-weight: bold;
+}
+.time_record .red{
+color: #c70000;
+font-weight: bold;
+}
+.tab_area .oj-tabbar-item-label {
+	color: #77d2ed !important;
+   font-size: 16px;
+}
+.tab_area li{
+	border-left: 1px solid #eee !important;
+	font-size: 16px;
+	height: 110px;
+}
+.tab_area .sickval {
+	color: #3ebc51;
+	font-size: 26px;
+}
+.tab_area .top_img{
+	    display: block;
+    text-align: center;
+}
+#userMenu.oj-button.oj-hover.oj-button-half-chrome .oj-button-button{
+	background-color: transparent !important;
+	border: 1px solid transparent;
+}
