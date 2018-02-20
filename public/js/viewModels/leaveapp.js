@@ -18,7 +18,7 @@ define(['ojs/ojcore', 'knockout', 'jquery','ojs/ojknockout', 'ojs/ojbutton', , '
       self.leaveEndDt = ko.observable();
       self.fullDayInd = ko.observable();
       self.responseMsg = ko.observable();
-      self.serviceUrl = 'https://CPRICS-gse00014243.uscom-east-1.oraclecloud.com:443/ic/api/integration/v1/flows/rest/PSFT_LEAVE_EVENT/1.0/leaves';
+      self.serviceUrl = 'https://CPRICS-gse00014243.uscom-east-1.oraclecloud.com:443/ic/api/integration/v1/flows/rest/HCMWEB_LEAVE_SD/1.0/leaves';
       
        var leavehistArray = [{leavetype: 'Sick Leave', startdate: '16-11-2017', enddate: '16-11-2017', duration: '1Days', status: 'Approved', attach: '--', requested: 'Employee', comment: '--', action: ':'},
        {leavetype: 'Vacation Leave', startdate: '18-12-2017', enddate: '2-1-2018', duration: '16Days', status: 'Approved', attach: '--', requested: 'Employee', comment: '', action: ''}];
@@ -58,7 +58,7 @@ var histcalArray = [{Description: 'Republic Day', month: 'Jan', date: '26', day:
                     contentType: 'application/json; charset=utf-8'
                 }).done(function (result) {
                     //var parsedRes = JSON.parse(result);
-                    if (result.code === '1') {
+                    if (result.code === '') {
                         self.responseMsg('Leave Request Successfully Submitted');
                     } else {
                         self.responseMsg('Leave Request could not be submitted: ' + result.code);
